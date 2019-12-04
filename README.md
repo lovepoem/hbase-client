@@ -1,8 +1,6 @@
 
 # hbase 客户端
 
-预发环境web控制台地址: http://10.1.3.111:16010/master-status
-
 ## 1 maven依赖
 ```xml
 <dependency>
