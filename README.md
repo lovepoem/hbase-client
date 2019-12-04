@@ -30,7 +30,7 @@
 ## 3 使用说明
  
 ### 3.1 标准java调用方式 
-
+https://github.com/lovepoem/hbase-client/blob/master/src/test/java/com/github/lovepoem/hbase/client/HbaseClientStdTest.java
 
 ### 3.2 spring配置数据源调用方式
 * 3.2.1 spring配置
