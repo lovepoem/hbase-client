@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <context:component-scan base-package="com.github.lovepoem.hbase"/>
+    <!-- hbase 数据源配置 -->
+    <bean id="hbasePoolConfig" class="com.github.lovepoem.hbase.client.pool.HbasePoolConfig">
+        <!--最大等待数-->
+        <property name="maxTotal" value="20"/>
+        <!--最小等待数-->
+        <property name="maxIdle" value="5"/>
+        <!--最大等待时间-->
+        <property name="maxWaitMillis" value="1000"/>
+        <!--最大等待时间-->
+        <property name="testOnBorrow" value="true"/>
+    </bean>
+
+    <!-- hbase 数据源连接池 -->
+    <bean id="hbasePool" class="com.github.lovepoem.hbase.client.HbasePool">
+        <!--zkQuorum-->
+        <constructor-arg index="0" type="java.lang.String" value="192.168.1.1,192.168.1.2"/>
+        <!--zkClientPort-->
+        <constructor-arg index="1" type="java.lang.String" value="2181"/>
+        <constructor-arg index="2" ref="hbasePoolConfig"/>
+    </bean>
+</beans>
