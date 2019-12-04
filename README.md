@@ -13,7 +13,7 @@
 ### V1.0.1-SNAPSHOT
 版本号：
 ```xml 
-1.0.1-SNAPSHOT
+0.1.0-SNAPSHOT
 ```
 功能： 
    * 添加基本java调用方式
@@ -22,7 +22,7 @@
 ### V1.0.0-SNAPSHOT
 版本号：
 ```xml 
-1.0.0-SNAPSHOT
+0.1.0-SNAPSHOT
 ```
 功能： 
    * 2.1.1 使用连接池方式连接hbase
