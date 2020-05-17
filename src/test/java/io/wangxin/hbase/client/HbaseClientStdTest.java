@@ -1,6 +1,6 @@
-package com.github.lovepoem.hbase.client;
+package io.wangxin.hbase.client;
 
-import com.github.lovepoem.hbase.client.pool.HbasePoolConfig;
+import io.wangxin.hbase.client.pool.HbasePoolConfig;
 import org.apache.hadoop.hbase.Cell;
 import org.apache.hadoop.hbase.CellUtil;
 import org.apache.hadoop.hbase.client.Delete;

@@ -1,4 +1,4 @@
-package com.github.lovepoem.hbase.client;
+package io.wangxin.hbase.client;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

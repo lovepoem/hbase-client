@@ -1,4 +1,4 @@
-package com.github.lovepoem.hbase.client.pool;
+package io.wangxin.hbase.client.pool;
 
 import org.apache.commons.pool2.PooledObjectFactory;
 import org.apache.commons.pool2.impl.GenericObjectPool;

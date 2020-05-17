@@ -1,4 +1,4 @@
-package com.github.lovepoem.hbase.client;
+package io.wangxin.hbase.client;
 
 /**
  * 默认配置

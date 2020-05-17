@@ -1,4 +1,4 @@
-package com.github.lovepoem.hbase.client;
+package io.wangxin.hbase.client;
 
 import org.apache.hadoop.hbase.Cell;
 import org.apache.hadoop.hbase.CellUtil;

@@ -1,4 +1,4 @@
-package com.github.lovepoem.hbase.client.pool;
+package io.wangxin.hbase.client.pool;
 
 /**
  * 连接池异常

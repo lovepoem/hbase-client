@@ -1,7 +1,7 @@
-package com.github.lovepoem.hbase.client;
+package io.wangxin.hbase.client;
 
-import com.github.lovepoem.hbase.client.pool.ConnectionPool;
-import com.github.lovepoem.hbase.client.pool.ConnectionException;
+import io.wangxin.hbase.client.pool.ConnectionPool;
+import io.wangxin.hbase.client.pool.ConnectionException;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.client.Connection;
 import org.apache.hadoop.hbase.client.ConnectionFactory;

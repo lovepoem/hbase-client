@@ -4,7 +4,7 @@
 ## 1 maven依赖
 ```xml
 <dependency>
-    <groupId>com.github.lovepoem</groupId>
+    <groupId>io.wangxin</groupId>
     <artifactId>hbase-client</artifactId>
     <version>${hbase-client.version}</version>
 </dependency>
@@ -30,7 +30,7 @@
 ## 3 使用说明
  
 ### 3.1 标准java调用方式 
-https://github.com/lovepoem/hbase-client/blob/master/src/test/java/com/github/lovepoem/hbase/client/HbaseClientStdTest.java
+https://github.com/lovepoem/hbase-client/blob/master/src/test/java/io/wangxin/hbase/client/HbaseClientStdTest.java
 
 ### 3.2 spring配置数据源调用方式
 * 3.2.1 spring配置
@@ -41,7 +41,7 @@ https://github.com/lovepoem/hbase-client/blob/master/src/test/java/com/github/lo
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
     <!-- hbase 数据源配置 -->
-    <bean id="hbasePoolConfig" class="com.github.lovepoem.hbase.client.pool.HbasePoolConfig">
+    <bean id="hbasePoolConfig" class="io.wangxin.hbase.client.pool.HbasePoolConfig">
         <property name="maxTotal" value="20"/>
         <property name="maxIdle" value="5"/>
         <property name="maxWaitMillis" value="1000"/>
@@ -49,7 +49,7 @@ https://github.com/lovepoem/hbase-client/blob/master/src/test/java/com/github/lo
     </bean>
 
     <!-- hbase 数据源连接池 -->
-    <bean id="hbasePool" class="com.github.lovepoem.hbase.client.HbasePool">
+    <bean id="hbasePool" class="io.wangxin.hbase.client.HbasePool">
         <!--zkQuorum-->
         <constructor-arg index="0" type="java.lang.String" value="${hbase.zkQuorum}"/>
         <!--zkClientPort-->
